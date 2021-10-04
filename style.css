@@ -20,7 +20,7 @@ h1 {
 
 #results {
     display: inline;
-    /* flex-direction: column; */
+    flex-direction: column;
 }
 
 #search-btn {

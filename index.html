@@ -21,16 +21,16 @@
     </header>
 
     <main>
-        <form class="form-container row">
-            <div class="col" id="search">
-            <h2>Search A City</h2>
-            <input type="text" class="search-box" id="city" placeholder="Search a City...">
-            <button class="search-btn">
-                Search
-            </button>
-            <div class="recent-searches">
-               
+        <form>
+            <div class="form-box col" id="search">
+                <h2>Search A City</h2>
+                <input type="text" class="search-box" autocomplete="off" id="search-box" placeholder="Search a City...">
             </div>
+            <div class="form-box col">
+                <button id="search-btn">Search</button>
+            </div>
+            <div id="msg">
+                <pre></pre>
             </div>
         </form>
 
@@ -41,23 +41,23 @@
                 </h3>
                 <table class="row">
                     <div class="col" id="todaysweather">
-                        Todays Weather:
+                        <p id='todaysweather'></p>
                     </div>
                     <p>5 Day Forecast:</p>
                     <div class="col" id="search2">
-                        Day 1
+                        <p id='Day 1'></p>
                     </div>
                     <div class="col" id="search3">
-                        Day 2
+                        <p id='Day 2'></p>
                     </div>
                     <div class="col" id="search4">
-                        Day 3
+                        <p id='Day 3'></p>
                     </div>
                     <div class="col" id="search5">
-                        Day 4
+                        <p id='Day 4'></p>
                     </div>
                     <div class="col" id="search5">
-                        Day 5
+                        <p id='Day 5'></p>
                     </div>
                 </table>
             </div>

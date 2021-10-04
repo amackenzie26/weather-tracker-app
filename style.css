@@ -19,6 +19,12 @@ h1 {
 }
 
 #results {
-    display: flex;
-    flex-direction: column;
+    display: inline;
+    /* flex-direction: column; */
+}
+
+#search-btn {
+    margin-left: 100px;
+    margin-top: 20px;
+
 }

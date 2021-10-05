@@ -85,6 +85,7 @@ function searchRequest(event) {
 
     document.getElementById('Day 4').innerHTML = `<ul><li>Temperature: ${weatherDay4.temp}</li>
     <li>Humidity: ${weatherDay4.humidity}</li><li>UV Index: ${weatherDay4.uvi}</li><li> Wind Speed: ${weatherDay4.wind_speed}</li><li> Weather: ${weatherDay4.weather[0].description}</li></ul>`
+
     document.getElementById('Day 5').innerHTML = `<ul><li>Temperature: ${weatherDay5.temp}</li>
     <li>Humidity: ${weatherDay5.humidity}</li><li>UV Index: ${weatherDay5.uvi}</li><li> Wind Speed: ${weatherDay5.wind_speed}</li><li> Weather: ${weatherDay5.weather[0].description}</li></ul>`
  

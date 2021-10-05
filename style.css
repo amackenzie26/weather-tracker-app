@@ -24,6 +24,7 @@ header {
     background-color: lightskyblue;
     margin-left: 300px;
     
+    
 }
 
 #results {
@@ -51,10 +52,7 @@ header {
 
 .searches {
     display: block;
-
+    
     margin-top: 20px;
 }
 
-.button {
-    display:block;
-}

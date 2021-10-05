@@ -29,44 +29,41 @@
             <div class="form-box col">
                 <button id="search-btn">Search</button>
             </div>
-            <div class="citybtnArea">
-                <button class="btn1"></button>
-                <button class="btn2"></button>
-                <button class="btn3"></button>
-                <button class="btn4"></button>
-                <button class="btn5"></button>
-            </div>
-            <div id="msg">
-                <pre></pre>
+            <div class="searches" id="searches"> 
+                
             </div>
         </form>
 
         <aside class="results-container row">
             <div class="col-4" id="results"></div>
-            <h3>
-                    Results for
+                <h3>
+                    
                 </h3>
-                <table class="row">
-                    <div class="col" id="todaysweather">
-                        <p id='todaysweather'>Today</p>
+                <container class="containertoday">
+                    <div class="todaysweather">
+                        <p id='todaysweather'></p>
                     </div>
-                    <p>5 Day Forecast:</p>
-                    <div class="col" id="search2">
-                        <p id='Day 1'>Day 1</p>
-                    </div>
-                    <div class="col" id="search3">
-                        <p id='Day 2'>Dy 2</p>
-                    </div>
-                    <div class="col" id="search4">
-                        <p id='Day 3'>Day 3</p>
-                    </div>
-                    <div class="col" id="search5">
-                        <p id='Day 4'>Day 4</p>
-                    </div>
-                    <div class="col" id="search5">
-                        <p id='Day 5'>Day 5</p>
-                    </div>
-                </table>
+                </container>
+                <container class="container5day">
+                    <table class="forecast5day">
+                        <p></p>
+                        <div class="col" id="search2">
+                            <p id='Day 1'></p>
+                        </div>
+                        <div class="col" id="search3">
+                            <p id='Day 2'></p>
+                        </div>
+                        <div class="col" id="search4">
+                            <p id='Day 3'></p>
+                        </div>
+                        <div class="col" id="search5">
+                            <p id='Day 4'></p>
+                        </div>
+                        <div class="col" id="search5">
+                            <p id='Day 5'></p>
+                        </div>
+                    </table>
+                </container>
             </div>
             <div class="results-display"></div>
         </aside>

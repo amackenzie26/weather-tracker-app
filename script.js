@@ -42,7 +42,7 @@ function searchRequest(event) {
     event.preventDefault();
 
     addCity();
-     var apiURL = "http://api.openweathermap.org/geo/1.0/direct?q=" + inputEl.value + "&appid=f6591845cbace330d3376dc66277602d";
+     var apiURL = "https://api.openweathermap.org/geo/1.0/direct?q=" + inputEl.value + "&appid=f6591845cbace330d3376dc66277602d";
 
     fetch(apiURL).then(function(response) {
         if (response.ok){
@@ -69,24 +69,24 @@ function searchRequest(event) {
 
   
 
-    console.log(data.daily[1])
+    
 
     document.getElementById('todaysweather').innerHTML = `<h3>Today:</h3><ul><li>Temperature: ${weatherToday.temp}</li>
     <li>Humidity: ${weatherToday.humidity}</li><li>UV Index: ${weatherToday.uvi}</li><li> Wind Speed: ${weatherToday.wind_speed}</li><li> Weather: ${weatherToday.weather[0].description}</li></ul>`
 
-    document.getElementById('Day 1').innerHTML = `<h4>5 Day Forecast:</h4><ul><li>Temperature: ${weatherDay1.temp}</li>
+    document.getElementById('day-1').innerHTML = `<h4>5 Day Forecast:</h4><ul><li>Temperature: ${weatherDay1.temp}</li>
     <li>Humidity: ${weatherDay1.humidity}</li><li>UV Index: ${weatherDay1.uvi}</li><li> Wind Speed: ${weatherDay1.wind_speed}</li><li> Weather: ${weatherDay1.weather[0].description}</li></ul>`
 
-    document.getElementById('Day 2').innerHTML = `<ul><li>Temperature: ${weatherDay2.temp}</li>
+    document.getElementById('day-2').innerHTML = `<ul><li>Temperature: ${weatherDay2.temp}</li>
     <li>Humidity: ${weatherDay2.humidity}</li><li>UV Index: ${weatherDay2.uvi}</li><li> Wind Speed: ${weatherDay2.wind_speed}</li><li> Weather: ${weatherDay2.weather[0].description}</li></ul>`
 
-    document.getElementById('Day 3').innerHTML = `<ul><li>Temperature: ${weatherDay3.temp}</li>
+    document.getElementById('day-3').innerHTML = `<ul><li>Temperature: ${weatherDay3.temp}</li>
     <li>Humidity: ${weatherDay3.humidity}</li><li>UV Index: ${weatherDay3.uvi}</li><li> Wind Speed: ${weatherDay3.wind_speed}</li><li> Weather: ${weatherDay3.weather[0].description}</li></ul>`
 
-    document.getElementById('Day 4').innerHTML = `<ul><li>Temperature: ${weatherDay4.temp}</li>
+    document.getElementById('day-4').innerHTML = `<ul><li>Temperature: ${weatherDay4.temp}</li>
     <li>Humidity: ${weatherDay4.humidity}</li><li>UV Index: ${weatherDay4.uvi}</li><li> Wind Speed: ${weatherDay4.wind_speed}</li><li> Weather: ${weatherDay4.weather[0].description}</li></ul>`
 
-    document.getElementById('Day 5').innerHTML = `<ul><li>Temperature: ${weatherDay5.temp}</li>
+    document.getElementById('day-5').innerHTML = `<ul><li>Temperature: ${weatherDay5.temp}</li>
     <li>Humidity: ${weatherDay5.humidity}</li><li>UV Index: ${weatherDay5.uvi}</li><li> Wind Speed: ${weatherDay5.wind_speed}</li><li> Weather: ${weatherDay5.weather[0].description}</li></ul>`
  
             })

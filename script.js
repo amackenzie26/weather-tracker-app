@@ -17,9 +17,16 @@ const addCity = (ev)=>{
             id: Date.now(),
             city: document.getElementById('search-box').value
     }
+    var exists = false;
+    for (i = 0; i < cities.length; i++) {
+        if (cities[i].city.toUpperCase() === city.city.toUpperCase()) {
+            exists = true;
+        }
+    }
+    if (exists === false) {
     cities.push(city);
     localStorage.setItem('cities', JSON.stringify(cities) );
-    // document.forms[0].reset(); 
+    }
 }
 
 $(document).ready(function () {
@@ -27,6 +34,7 @@ $(document).ready(function () {
 });
 
 function createCityButtons() {
+    $('#searches').empty()
         if (cities.length > 0) {
             for (var i = 0; i < cities.length; i++) {
                 var btn = $("<button>")
